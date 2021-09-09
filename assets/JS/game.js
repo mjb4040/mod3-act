@@ -8,6 +8,7 @@ var randomNumber = function(min, max) {
 };
 
 // fight function (now with parameter for enemy's object holding name, health, and attack values)
+
 var getPlayerName = function() {
   var name = "";
 
@@ -94,7 +95,7 @@ var startGame = function() {
   
       // pick new enemy to fight based on the index of the enemyInfo array
       var pickedEnemyObj = enemyInfo[i];
-
+      
       // set health for picked enemy
       pickedEnemyObj.health = randomNumber(40, 60);
 
@@ -182,6 +183,7 @@ var shop = function() {
 
 // player information
 var playerInfo = {
+
   name: getPlayerName(),
   health: 100,
   attack: 10,
